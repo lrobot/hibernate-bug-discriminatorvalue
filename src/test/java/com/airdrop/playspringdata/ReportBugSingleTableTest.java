@@ -14,7 +14,7 @@ import com.airdrop.playspringdata.singletable.TypeNullProduct;
 import com.airdrop.playspringdata.singletable.TypeNullProductRepository;
 
 @DataJpaTest
-public class ReportBugSingleTable {
+public class ReportBugSingleTableTest {
 
     @Autowired
     TestEntityManager entityManager;
@@ -29,33 +29,33 @@ public class ReportBugSingleTable {
 
     @Test
     public void testRunIt() {
-        Book book = new Book();
-        book.setName("book1");
-        book.setAuthor("author1");
-        entityManager.persist(book);
+        // Book book = new Book();
+        // book.setName("book1");
+        // book.setAuthor("author1");
+        // entityManager.persist(book);
 
-        Pen pen = new Pen();
-        pen.setName("pen1");
-        pen.setColor("red");
-        entityManager.persist(pen);
+        // Pen pen = new Pen();
+        // pen.setName("pen1");
+        // pen.setColor("red");
+        // entityManager.persist(pen);
 
-        {
-            TypeNullProduct myProduct = new TypeNullProduct();
-            myProduct.setName("typeNull Prodcut");
-            entityManager.persist(myProduct);
-        }
+        // {
+        //     TypeNullProduct myProduct = new TypeNullProduct();
+        //     myProduct.setName("typeNull Prodcut");
+        //     entityManager.persist(myProduct);
+        // }
 
-        {
-            TypeNullProduct myProduct = new TypeNullProduct();
-            myProduct.setName("typeNull Prodcut");
-            entityManager.persist(myProduct);
-        }
+        // {
+        //     TypeNullProduct myProduct = new TypeNullProduct();
+        //     myProduct.setName("typeNull Prodcut");
+        //     entityManager.persist(myProduct);
+        // }
 
-        {
-            MyProduct myProduct = new MyProduct();
-            myProduct.setName("myProdcut");
-            entityManager.persist(myProduct);
-        }
+        // {
+        //     MyProduct myProduct = new MyProduct();
+        //     myProduct.setName("myProdcut");
+        //     entityManager.persist(myProduct);
+        // }
 
         // System.out.println("qqq myProductRepository");
         // myProductRepository.findAll().forEach(System.out::println);
